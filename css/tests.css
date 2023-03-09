@@ -1,0 +1,131 @@
+/* ROOT */
+:root {
+    /* --header-bg-color: #fff; */
+    /* --main-bg-color: #fff; */
+    /* --main-text-color: #fff; */
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    background-image: url('../images/You win.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* filter: blur(5px); */
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.question-container {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    border: 1.5px solid #0000008e;
+    color: white;
+}
+
+.question-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.39);
+    transform: translateY(-0.1rem);
+    transition: transform 200ms;
+    ;
+}
+
+.question-option {
+    margin: 0;
+    padding: 15px 15px;
+    background-color: #00000074;
+}
+
+.question-text {
+    margin: 0;
+    padding: 15px;
+}
+
+.correct {
+    border: 1px solid #00800067;
+    background-color: green;
+    color: white;
+}
+
+.incorrect_answer {
+    border: 1px solid #ff000096;
+    background-color: red;
+    color: white;
+}
+
+.attempts {
+    display: inline-block;
+    font-size: 26px;
+}
+
+.title {
+    font-size: 100px;
+}
+
+.text-center_btn {
+    display: block;
+    color: white;
+    font-size: 80px;
+}
+
+.text-center_btn:hover {
+    color: #ff000071;
+}

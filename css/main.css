@@ -1,0 +1,101 @@
+/* ROOT */
+/* :root { */
+/* --header-bg-color: #fff; */
+/* --main-bg-color: #fff; */
+/* --main-text-color: #fff; */
+/* } */
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    background-image: url('../images/back-to-future.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cards {
+    border: none;
+    background-color: transparent;
+}
+
+.card-btn {
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(-150px);
+    border: 0.5px solid white;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.39);
+    transform: translateY(-0.1rem);
+    transition: transform 200ms;;
+}
+
+.card-btn a {
+    color: white;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
