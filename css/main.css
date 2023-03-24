@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     background-image: url('../images/back-to-future.jpg');
     background-size: cover;
@@ -69,33 +69,201 @@ a {
     text-decoration: none;
 }
 
-.cards {
+.avto-test {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/back-to-future.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.avto-test__title {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.avto-test_subtitle {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+.btn-group {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-button,
+.medium-button,
+.hard-button {
+    width: 250px;
+    font-weight: 500;
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px 35px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.medium-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.site-easy {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/You\ win.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__wrapper {
+    display: flex;
+}
+
+.level__title {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.to-back__button {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.easy-section__end {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.level-img {
+    display: block;
+    margin-left: 260px;
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.question-title {
+    margin-top: 20px;
+    margin-left: 260px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.choice-container {
+    width: 70%;
+    display: flex;
+    font-size: 20px;
+    border: 2px solid #fff;
+    margin-bottom: 9px;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.answer {
+    margin: 0;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: aqua;
+}
+
+.text {
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
     border: none;
     background-color: transparent;
+    color: #fff;
+    padding: 15px;
 }
 
-.card-btn {
-    color: white;
-    background-color: transparent;
-    backdrop-filter: blur(-150px);
-    border: 0.5px solid white;
-    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-    cursor: pointer;
+.level-section {
+    margin: auto;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
 }
 
-.card-btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.39);
-    transform: translateY(-0.1rem);
-    transition: transform 200ms;;
+.level-time {
+    position: absolute;
+    left: 70%;
+    top: 0%;
 }
 
-.card-btn a {
-    color: white;
+.number-question {
+    position: absolute;
+    left: 70%;
+    top: 13%;
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+.false-question {
+    position: absolute;
+    left: 70%;
+    top: 20%;
+}
+
+.true-question {
+    position: absolute;
+    left: 70%;
+    top: 27%;
+}
+
+.lose-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Game\ Over.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-color: #00000051;
+}
+
+.lose-section__title {
+    margin: auto;
+    margin-top: 300px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+
+.lose-link {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
 }

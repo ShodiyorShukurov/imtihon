@@ -6,125 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avotest - test </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/tests.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row mt-1 question_block ">
-            <div class="col-3">
-                <h1 class="level-text-js text-white">
-                    Level: Hard
-                </h1>
-                <button class="btn card-btn">
-                    <a href="./index.html">
-                        Ortga qaytish
-                    </a>
-                </button>
-            </div>
-            <div class="col-4 ms-3">
-                <div class="card cards text-white">
-                    <div class="card-body text-center">
-                        <img class="js-card-img img-fulid img-top" src="https://via.placeholder.com/200" alt="">
-                        <h3 class="js-score-text mt-2">
-                            1-savol
-                        </h3>
-                        <h4 class="js-question-text">
-                            Bu qanday belgi?
-                        </h4>
-                        <div class="question-container">
-                            <p class="question-option">A</p>
-                            <p class="question-text" data-number="1">
-                                </p>
-
-                        </div>
-                        <div class="question-container">
-                            <p class="question-option">B</p>
-                            <p class="question-text" data-number="2"></p>
-
-                        </div>
-                        <div class="question-container">
-                            <p class="question-option">C</p>
-                            <p class="question-text" data-number="3"></p>
-
-                            </div>
-
-                        </div>
-                        <div class="question-container">
-                            <p class="question-option">D</p>
-                            <p class="question-text" data-number="4"></p>
-                            </div>
-                        </div>
+    <div class="site-easy">
+        <div class="container">
+            <div class="section__wrapper">
+                <div class="easy-section__start">
+                    <h1 class="level__title">Level: Hard</h1>
+                    <a class="to-back__button" href="./index.html">Ortga</a>
+                </div>
+                <div class="easy-section__end">
+                    <img class="level-img" src="./images/signs/aholi_punkti.gif" alt="" width="200" height="150">
+                    <div class="level-section">
+                        <p class="level-time"></p>
+                        <span class="number-question">Qolgan savollar: 1/10</span>
+                        <span class="false-question">Xato savollar: 0/5</span>
+                        <span class="true-question">To'gri savollar: 0</span>
                     </div>
+                    <h2 class="question-title">Bu qaysi belgi?</h2>
+                    <div class="choice-container">
+                        <p class="js-avto-answer answer">A</p>
+                        <button class="js-avto-text text" type="button" data-number="1">Surat va video</button>
+                    </div>
+                    <div class="choice-container">
+                        <p class="js-avto-answer answer">B</p>
+                        <button class="js-avto-text text" type="button" data-number="1">Surat va video</button>
+                    </div>
+                    <div class="choice-container">
+                        <p class="js-avto-answer answer">C</p>
+                        <button class="js-avto-text text" type="button" data-number="1">Surat va video</button>
+                    </div>
+                    <div class="choice-container">
+                        <p class="js-avto-answer answer">D</p>
+                        <button class="js-avto-text text" type="button" data-number="1">Surat va video</button>
+                    </div>
+                   
                 </div>
             </div>
-            <div class="col-3 ms-5">
-                <span class="attempts ">
-                    Qolgan urunishlar:
-                    <span class="js-attempts">
-                        5
-                    </span>
-                </span>
-                <span class="attempts">
-                    Qolgan vaqt:
-                    <span class="js-time-hard">
-                        
-                    </span>
-                </span>
-                <span class="attempts">
-                    Bajarilgan savollar:
-                    <span class="js-number-questions">
-                        1/10
-                    </span>
-                </span>
-                <span class="attempts">
-                    To'g'ri javoblar:
-                    <span class="true-answar">
-                        0
-                    </span>
-                </span>
-                <span class="attempts">
-                    Noto'g'ri javoblar:
-                    <span class="false-answar">
-                        0
-                    </span>
-                </span>
-            </div>
+
         </div>
     </div>
 
-    <div class="container">
-        <div class="you-win_block text-center my-auto d-none">
-            <h1 class="title ">
-                YOU WIN
-            </h1>
-            <a class="btn text-center_btn" href="./index.html">Play Again</a>
-            <p class="attempts">
-                To'g'ri javoblar:
-                <span class="js-resualt-answar"></span>
-            </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="you-lose_block text-center my-auto d-none">
-            <h1 class="title">
-                YOU LOSE
-            </h1>
-            <a class="btn text-center_btn" href="./index.html">Play Again</a>
-            <p class="attempts">
-                To'g'ri javoblar:
-                <span class="js-resualt-answar"></span>
-            </p>
-        </div>
-    </div>
+    
 
 
-    <script src="./js/signs.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
